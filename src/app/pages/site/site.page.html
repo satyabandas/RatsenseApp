@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sites</ion-title>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment (ionChange)="segmentChanged($event)" value="map">
+      <ion-segment-button value="map" class="orng-clr">
+        MAP VIEW
+      </ion-segment-button>
+      <ion-segment-button value="listing">
+        SITES LISTING
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div [style.display]="selectedSegment == 'map' ? 'block' : 'none'">
+    <div #map id="map"></div>
+  </div>
+  <ion-list *ngIf="selectedSegment == 'listing'">
+    <ion-item lines="full" button [routerLink]="['/zonemap']" detail>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        Site List 1
+      </ion-label>
+    </ion-item>
+    <ion-item lines="full" button [routerLink]="['/zonemap']" detail>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        Site List 2
+      </ion-label>
+    </ion-item>
+    <ion-item lines="full" button [routerLink]="['/zonemap']" detail>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        Site List 3
+      </ion-label>
+    </ion-item>
+    <ion-item lines="full" button [routerLink]="['/zonemap']" detail>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        Site List 4
+      </ion-label>
+    </ion-item>
+    <ion-item lines="full" button [routerLink]="['/zonemap']" detail>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        Site List 5
+      </ion-label>
+    </ion-item>
+    <ion-item lines="full" button [routerLink]="['/zonemap']" detail>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        Site List 6
+      </ion-label>
+    </ion-item>
+    <ion-item lines="full" button [routerLink]="['/zonemap']" detail>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        Site List 7
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer class="ion-no-border" [style.display]="selectedSegment == 'map' ? 'block' : 'none'">
+  <ion-toolbar>
+    <ion-title>Click on map pointer to view the zones</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Zone Map</ion-title>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Select Zone</ion-label>
+    <ion-select interface="popover" placeholder="Select One">
+      <ion-select-option value="z1">Zone 1</ion-select-option>
+      <ion-select-option value="z2">Zone 2</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>
+<ion-footer class="ion-padding">
+  <ion-toolbar>
+    <ion-button expand="full" fill="solid" shape="round" [routerLink]="['/feedback']" class="btn-secondary">SUBMIT FEEDBACK</ion-button>
+  </ion-toolbar>
+</ion-footer>
