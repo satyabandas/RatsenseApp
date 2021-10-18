@@ -20,6 +20,13 @@
       <ion-select-option value="z2">Zone 2</ion-select-option>
     </ion-select>
   </ion-item>
+  <div>
+    <highcharts-chart
+      style="margin: 30px;"
+      [Highcharts]="Highcharts"
+      [options]="chartOptions"
+    ></highcharts-chart>
+  </div>
 </ion-content>
 <ion-footer class="ion-padding">
   <ion-toolbar>
