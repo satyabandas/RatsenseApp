@@ -76,17 +76,17 @@ ion-card {
     --highlight-background: #fc6f15;
  }
 
- @media (prefers-color-scheme: dark) {
-    ion-content {
-        --ion-background-color:#1e1e1e;
-    }
-    ion-card {
-        --ion-background-color: #1e1e1e;
-    }
-    ion-card-content {
-        --ion-background-color: #1e1e1e;
-        .form-box {
-            background-color: #1e1e1e;
-        }
-    }
-}
+//  @media (prefers-color-scheme: dark) {
+//     ion-content {
+//         --ion-background-color:#1e1e1e;
+//     }
+//     ion-card {
+//         --ion-background-color: #1e1e1e;
+//     }
+//     ion-card-content {
+//         --ion-background-color: #1e1e1e;
+//         .form-box {
+//             background-color: #1e1e1e;
+//         }
+//     }
+// }

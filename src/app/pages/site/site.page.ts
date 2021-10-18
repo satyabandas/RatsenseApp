@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ViewChild, ElementRef } from '@angular/core';
 
 declare var google: any;
@@ -15,8 +16,10 @@ export class SitePage implements OnInit {
   map: any;
   @ViewChild('map', {read: ElementRef, static: false}) mapRef: ElementRef;
 
-  constructor() { 
-    
+  constructor(private router: Router){}
+
+  navigate(){
+    this.router.navigate(['/Loginform'])
   }
 
   ionViewDidEnter() {
