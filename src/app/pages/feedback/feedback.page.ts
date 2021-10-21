@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 import {AlertController} from '@ionic/angular'
 
 @Component({
@@ -9,7 +9,7 @@ import {AlertController} from '@ionic/angular'
 })
 export class FeedbackPage implements OnInit {
 
-  constructor(private alertController : AlertController) { }
+  constructor(private alertController : AlertController, private router: Router) { }
 
   ngOnInit() {
   }
@@ -20,7 +20,12 @@ export class FeedbackPage implements OnInit {
       header: '',
       subHeader: '',
       message: 'Thank you for submitting your Feedback.',
-      buttons: ['OK']
+      buttons: [{
+      text: 'OK',
+      handler: () => {
+        this.router.navigate(['zonemap'])
+      }
+      }]
     }).then(res => {
       res.present();
 

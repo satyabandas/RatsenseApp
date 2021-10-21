@@ -9,8 +9,18 @@ ion-button {
 }
 ion-footer {
     background-color: #ffffff;
+    padding: 0.4rem 1rem;
 }
 .highcharts-container {
     height: 70vh !important;
     width: 100% !important;
+}
+
+ion-card {
+    margin: 0;
+    border:0;
+    box-shadow: none;
+    img {
+        width: 100%;
+    }
 }
