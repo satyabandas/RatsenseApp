@@ -38,7 +38,7 @@ export class FeedbackPage implements OnInit {
       cssClass: 'cust-alert',
       header: '',
       subHeader: '',
-      message: 'Opening Camera........',
+      message: 'Camera/Gallery feature implementation done here.',
       buttons: ['OK']
     }).then(res => {
       res.present();

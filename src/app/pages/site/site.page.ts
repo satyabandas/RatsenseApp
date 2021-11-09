@@ -27,10 +27,10 @@ export class SitePage implements OnInit {
   }
 
   showMap() {
-    const location = new google.maps.LatLng(-37.820148, 145.0358);
+    const location = new google.maps.LatLng(-37.798346, 144.960974);
     const options = {
       center: location,
-      zoom: 15,
+      zoom: 4,
       fullscreenControl: false,
       disableDefaultUI: false
     }
